@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+background-color: #121212;
+
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.typing-area {
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  width: 80%;
+  height: 30vh;
+  border: #bb86fc 2px solid;
+  border-radius: 4px;
+}
+.text{
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+.text span.current{
+  background: #bb86fc;
+}
+.text span.wrong{
+  background: rgba(255, 0, 0, 0.399);
+}
+.stats{
+  width: 100dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  color: #9b9999;
+  font-size: 20px;
+}
+
+.keyboard{
+    border: 2px solid #bb86fc;
+    padding: 20px;
+    border-radius: 8px;
+}
+.key.active{
+  transform: translateY(2px);
+  background: #bb86fc;
+}
+
+.keyboard-row{
+display: flex;
+justify-content: center;
+    padding: 5px;
+    gap: 10px;
+}
+.key{
+color: hsla(0, 0%, 100%, 0.5);
+padding: 10px 14px;
+background: none;
+border: 2px solid black;
+border-radius: 8px;
+
+}
+.key-space{
+    width: 15em;
+}
+
