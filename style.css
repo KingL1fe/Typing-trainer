@@ -33,6 +33,10 @@ main {
 .text span.wrong{
   background: rgba(255, 0, 0, 0.399);
 }
+.text span.correct{
+  color: hsla(0, 0%, 100%, 0.5);
+;
+}
 .stats{
   width: 100dvh;
   display: flex;
