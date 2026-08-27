@@ -5,68 +5,87 @@
 }
 body {
 background-color: #121212;
-
 }
-main {
-  height: 100vh;
+.navbar{
+  height: 7rem;
+  width: 98%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  flex-direction: column;
+}
+.navbar ul {
+  display: flex;
+  gap: 30px;
+}
+.navbar ul li{
+  list-style: none;
+}
+.settings{
+  background:none;
+  border:none;
+}
+.color-mode{
+background:none;
+border:none;
 }
 .typing-area {
   display: flex;
   align-items: center;
-  padding: 20px 50px;
-  width: 80%;
-  height: 30vh;
-  border: #bb86fc 2px solid;
-  border-radius: 4px;
+  justify-content: center;
+  width: 100%;
 }
 .text{
   color: rgb(255, 255, 255);
-  font-size: 24px;
+  font-size:24px;
+  font-weight: 300;
+  font-family: monospace;
+}
+.text span{
+  transition: 0.3s ease;
 }
 .text span.current{
-  background: #bb86fc;
+  border-left: #bb86fc 3px solid;
 }
 .text span.wrong{
-  background: rgba(255, 0, 0, 0.399);
+  background: rgba(255, 0, 0, 0.2);
 }
 .text span.correct{
   color: hsla(0, 0%, 100%, 0.5);
-;
 }
 .stats{
-  width: 100dvh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   gap: 10px;
   padding: 20px;
   color: #9b9999;
-  font-size: 20px;
+  font-size: 24px;
+  font-family:cursive;
 }
 
 .keyboard{
-    border: 2px solid #bb86fc;
-    padding: 20px;
-    border-radius: 8px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.keyboard-container{
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
 }
 .key.active{
   transform: translateY(2px);
-  background: #bb86fc;
+  background: #8698fc;
 }
 
 .keyboard-row{
 display: flex;
 justify-content: center;
-    padding: 5px;
-    gap: 10px;
+padding: 5px;
+gap: 10px;
 }
 .key{
 color: hsla(0, 0%, 100%, 0.5);
-padding: 10px 14px;
+padding: 4px 10px;
 background: none;
 border: 2px solid black;
 border-radius: 8px;
@@ -75,4 +94,29 @@ border-radius: 8px;
 .key-space{
     width: 15em;
 }
+.description{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.description h1{
+  color: whitesmoke;
+}
+.description p{
+  color: rgba(245, 245, 245, 0.8);
+
+}
+
+#light.active{
+  display: none;
+}
+#dark.active{
+  display: none;
+}
+
+
+
+
 
