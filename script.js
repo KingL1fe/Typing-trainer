@@ -34,14 +34,14 @@ document.addEventListener("keydown",(e)=>{
             resWPM.textContent = Math.floor(wpm);
             
             if (wpm <= 15){rank.textContent="🐌 Snail"} 
-            if (wpm <= 25) {rank.textContent="🐢 Turtle"} 
-            if (wpm <= 35) {rank.textContent="🐨 Koala"} 
-            if (wpm <= 45) {rank.textContent="🦊 Fox"} 
-            if (wpm <= 55) {rank.textContent="🐺 Wolf"} 
-            if (wpm <= 70) {rank.textContent="⚡ Lightning"} 
-            if (wpm <= 85) {rank.textContent="🏎️ Speedster"} 
-            if (wpm <= 100) {rank.textContent="🔥 Blaze"} 
-            if (wpm <= 120) {rank.textContent="👑 Master"} 
+            else if (wpm <= 25) {rank.textContent="🐢 Turtle"} 
+            else if (wpm <= 35) {rank.textContent="🐨 Koala"} 
+            else if (wpm <= 45) {rank.textContent="🦊 Fox"} 
+            else if (wpm <= 55) {rank.textContent="🐺 Wolf"} 
+            else if (wpm <= 70) {rank.textContent="⚡ Lightning"} 
+            else if (wpm <= 85) {rank.textContent="🏎️ Speedster"} 
+            else if (wpm <= 100) {rank.textContent="🔥 Blaze"} 
+            else if (wpm <= 120) {rank.textContent="👑 Master"} 
             else{rank.textContent="👹 Keyboard Demon"} 
 
     
@@ -77,7 +77,7 @@ document.addEventListener("keyup",(e)=>{
 })
 
 let text = document.querySelector(".text");
-const textVariable ="The quick brown fox jumps over the lazy dog. Every day is a new chance to learn something, improve your skills, and become faster. Keep your eyes on the text, stay focused, and try to type each word correctly. Speed is important, but accuracy matters even more. Do not rush; find your rhythm and keep going!";
+const textVariable ="The quick brown fox jumps over the lazy dog.";
 const characters = textVariable.toLowerCase().split("");
 for (const character of characters){
     const span = document.createElement("span");
