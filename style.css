@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.logo{
+.logo {
   padding: 0 50px;
   color: whitesmoke;
   font-size: 30px;
@@ -11,15 +11,15 @@
   align-items: center;
   gap: 5px;
 }
-.logo img{
+.logo img {
   width: 50px;
   height: 50px;
 }
 body {
-background-color: #121212;
+  background-color: #121212;
 }
 
-.navbar{
+.navbar {
   height: 7rem;
   width: 98%;
   display: flex;
@@ -29,42 +29,42 @@ background-color: #121212;
   display: flex;
   gap: 30px;
 }
-.navbar ul li{
+.navbar ul li {
   list-style: none;
 }
-.settings{
-  background:none;
-  border:none;
+.settings {
+  background: none;
+  border: none;
 }
-.color-mode{
-background:none;
-border:none;
+.color-mode {
+  background: none;
+  border: none;
 }
 .typing-area {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.text{
+.text {
   color: rgb(255, 255, 255);
-  font-size:24px;
+  font-size: 24px;
   font-weight: 300;
   font-family: monospace;
   overflow-wrap: break-word;
-  }
-.text span{
+}
+.text span {
   transition: 0.3s ease;
 }
-.text span.current{
-  border-left: #bb86fc 3px solid;
+.text span.current {
+  border-left: whitesmoke 3px solid;
 }
-.text span.wrong{
+.text span.wrong {
   background: rgba(255, 0, 0, 0.2);
 }
-.text span.correct{
+.text span.correct {
   color: hsla(0, 0%, 100%, 0.5);
 }
-.stats{
+.stats {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -72,57 +72,54 @@ border:none;
   padding: 20px;
   color: #9b9999;
   font-size: 24px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.keyboard{
+.keyboard {
   padding: 20px 0;
   display: flex;
   justify-content: center;
 }
-.keyboard-container{
+.keyboard-container {
   border: 3px solid rgba(0, 0, 0, 0.5);
   border-radius: 8px;
 }
-.key.active{
+.key.active {
   transform: translateY(2px);
   background: #8698fc;
 }
 
-.keyboard-row{
-display: flex;
-justify-content: center;
-padding: 5px;
-gap: 10px;
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  gap: 10px;
 }
-.key{
-color: hsla(0, 0%, 100%, 0.5);
-padding: 4px 10px;
-background: none;
-border: 2px solid black;
-border-radius: 8px;
-
+.key {
+  color: hsla(0, 0%, 100%, 0.5);
+  padding: 4px 10px;
+  background: none;
+  border: 2px solid black;
+  border-radius: 8px;
 }
-.key-space{
-    width: 15em;
+.key-space {
+  width: 15em;
 }
-.description{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.description h1{
+.description h1 {
   color: whitesmoke;
 }
-.description p{
+.description p {
   color: rgba(245, 245, 245, 0.8);
-
 }
 
-.result-window{
-  background-color: rgba(18, 18, 18, 0.9); 
+.result-window {
+  background-color: rgba(18, 18, 18, 0.9);
   border: #9b9999 2px solid;
   color: whitesmoke;
   width: 25rem;
@@ -135,35 +132,36 @@ align-items: center;
   border-radius: 4px;
   display: none;
   animation: smoothDisplay 0.3s ease-in;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.result-window span{
+.result-window span {
   font-size: 24px;
 }
-.res-container{
+.res-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.result-window h1{
+.result-window h1 {
   text-align: center;
 }
-.close-btn{
+.close-btn {
   display: flex;
   justify-content: end;
   align-items: center;
 }
-.close{
+.close {
   background: none;
   border: none;
   padding: 5px 10px;
   color: whitesmoke;
 }
-.restart{
+.restart {
   padding: 10px;
 }
-.retry-btn, .retry{
+.retry-btn,
+.retry {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,40 +174,38 @@ align-items: center;
 }
 
 @keyframes smoothDisplay {
-  0%{
+  0% {
     opacity: 0;
   }
-  25%{
+  25% {
     opacity: 25%;
   }
-  50%{
+  50% {
     opacity: 50%;
   }
-  75%{
+  75% {
     opacity: 75%;
   }
-  100%{
+  100% {
     opacity: 100%;
   }
 }
-.retryAgain{
+.retryAgain {
   display: flex;
   justify-content: center;
   width: 100%;
   display: none;
   padding-bottom: 20px;
 }
-.retry-icon, .retry-icon-2{
+.retry-icon,
+.retry-icon-2 {
   display: flex;
   justify-content: center;
   align-items: center;
   transform: rotate(0deg);
 }
-.retry-icon.active, .retry-icon-2.active{
+.retry-icon.active,
+.retry-icon-2.active {
   transform: rotate(360deg);
   transition: 1s ease;
 }
-
-
-
-
