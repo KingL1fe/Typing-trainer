@@ -39,11 +39,19 @@ document.addEventListener("keydown", (e) => {
     accuracyCount()
 
   let keyElement = document.querySelector(`[data-key="${e.key}"]`);
-  keyElement.classList.add("active");
+
+  if(keyElement){
+    keyElement.classList.add("active");
+  }
+
 });
 document.addEventListener("keyup", (e) => {
   let keyElement = document.querySelector(`[data-key="${e.key}"]`);
-  keyElement.classList.remove("active");
+
+  if(keyElement){
+    keyElement.classList.remove("active");
+  }
+  
 });
 let text = document.querySelector(".text");
 const textVariable = randomText;

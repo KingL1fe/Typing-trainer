@@ -25,13 +25,6 @@ body {
   display: flex;
   align-items: center;
 }
-.navbar ul {
-  display: flex;
-  gap: 30px;
-}
-.navbar ul li {
-  list-style: none;
-}
 .settings {
   background: none;
   border: none;
